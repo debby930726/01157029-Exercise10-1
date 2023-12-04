@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Reference: 
+    https://codepen.io/knaman2609/pen/Zbyjvv
+    https://pixabay.com/illustrations/donald-trump-america-president-5103361/ 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>My Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color: #54AFE4;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            text-align: right;
+            width: 39%;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #C3DEF3;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: #79A9CE;
+        }
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">Hanbin</span>
+                <span class="last-name">Kim</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">IG: </span>
+                <span class="email-val">@shxxbi131</span>
+                <span class="separator"></span>
+                <span class="phone">Twitter: </span>
+                <span class="phone-val">@shxx131bi131</span>
+            </div>
+
+            <div>
+                <img src="131.jpg" width="60%">
+            </div>
+
+            <div class="about">
+                <span class="position">Solo Singer </span>
+                <span class="desc">
+                    藝名「B.I」，是「BE I」的縮寫。源於哲學家蘇格拉底的名言「認識你自己」和Eminem的歌曲「lose
+                    yourself」，由金韓彬自己查英語詞典「『be』的意思是『做……』的意思，後面可以加任何單詞，於是加上『I』」。有著「我是rapper」、「成為我自己」、「我可以成為任何我想成為的樣子」、「我什麼都可以做到」等涵意。
+                </span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Experience</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">YG</div>
+                            <div class="addr">Korea</div>
+                            <div class="duration"> 2015 - 2019</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">iKON</div>
+                            <div class="desc">did This and that</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">IOK company</div>
+                            <div class="addr">Korea</div>
+                            <div class="duration">Jan 2011 - Feb 2015</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Solo Singer</div>
+                            <div class="desc">did This and that</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section__title">WORKS</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">Love Scenario</div>
+                        <div class="text">〈Love Scenario〉被描述為一首圓潤但相對歡快的曲子，曲折的旋律引導著有節奏的舞曲。
+
+                            隊長兼歌曲製作人B.I說道：「我想通過電影《樂來越愛你》最後10分鐘的溫暖告別來表達我感到遺憾的東西，既不悲傷也不快樂，」也繼續說：「主角最後對他過去的愛人微笑，我覺得『夠了』。」
+                        </div>
+                    </div>
+
+                    <div class="section__list-item">
+                        <div class="name">BTBT</div>
+                        <div class="text">根據 BI
+                            的說法，“BTBT”是關於“當你遇到某人或開始一段關係時所感受到的熱情”，更一般地說，是“我們在青春期經歷的強大而叛逆的愛”。「BTBT」一詞源自韓文動詞「비틀거리다」，意思是「踉蹌蹌」，暗喻因愛而醉酒。歌曲名稱的發音類似英文首字母縮寫詞，而副歌部分則是「
+                            비틀비틀」（<a href="/login">link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Skills</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                Compose
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input id="ck1" type="checkbox" checked />
+
+                            <label for="ck1"></label>
+                            <input id="ck2" type="checkbox" checked />
+
+                            <label for="ck2"></label>
+                            <input id="ck3" type="checkbox" checked />
+
+                            <label for="ck3"></label>
+                            <input id="ck4" type="checkbox" checked />
+                            <label for="ck4"></label>
+                            <input id="ck5" type="checkbox" checked />
+                            <label for="ck5"></label>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            Rap</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" checked />
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" checked />
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" />
+                        <label for="ck5"></label>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        Sing, Compose.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
